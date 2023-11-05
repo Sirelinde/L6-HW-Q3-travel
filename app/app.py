@@ -26,5 +26,5 @@ def hello_world():
         y_pred = model.predict([np_arr])  
         y_pred_to_str = str(y_pred)
         #return predictions_to_str
-        return render_template('index.html', href2='The recommended travel destination for you (salary:'+str(mysalary)+', gender:'+str(mygender)+', marital status:'+str(mymarital)+') is:'+y_pred_to_str)
+        return render_template('index.html', href2='The recommended travel destination for you (salary: '+str(mysalary)+', gender: '+str(mygender)+', marital status: '+str(mymarital)+') is: '+y_pred_to_str)
 
